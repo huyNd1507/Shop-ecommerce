@@ -1,0 +1,26 @@
+.info-box {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  overflow: hidden;
+
+  h4 {
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 1rem;
+    padding: 1rem 0px;
+  }
+
+  h3 {
+    font-size: 18px;
+    color: var(--red);
+  }
+
+  span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

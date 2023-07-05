@@ -1,0 +1,236 @@
+.fixed {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  transition: all 1s;
+  z-index: 100;
+}
+
+header {
+  top: 0;
+  width: 100%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  .mobile-menu {
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    display: none;
+
+    .mb-logo {
+      font-size: 25px;
+      font-weight: 700;
+    }
+  }
+
+  .mb-menu-close {
+    display: none;
+  }
+
+  .mid-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+
+    .logo {
+      font-size: 40px;
+      font-weight: 700;
+    }
+
+    .main-menu {
+      & > li {
+        display: flex;
+        align-items: center;
+        margin: 0 20px;
+        font-weight: 600;
+        font-size: 16px;
+        height: 100%;
+        text-transform: uppercase;
+        &.active {
+          border-bottom: 2px solid red;
+          border-top: 2px solid transparent;
+        }
+      }
+    }
+
+    .user-menu {
+      display: flex;
+
+      & > li > a {
+        font-size: 30px;
+        margin-left: 15px;
+      }
+
+      span {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        display: block;
+        background-color: #000;
+        color: #fff;
+        bottom: 26px;
+        right: 0px;
+        font-size: 13px;
+        border-radius: 50%;
+        text-align: center;
+      }
+    }
+  }
+
+  .carts {
+    position: relative;
+  }
+
+  .bottom-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-menu {
+    display: flex;
+    height: var(--bottom-header-size);
+  }
+
+  .cc.active {
+    border-bottom: 2px solid red;
+    color: red;
+  }
+
+  .mega-contents {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+    background-color: var(--main-bg-color);
+    width: 20%;
+    top: calc(100% + 100px);
+    z-index: 2;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0;
+    transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+
+    li {
+      display: block;
+      cursor: pointer;
+      font-size: 16px;
+      line-height: 30px;
+      text-transform: uppercase;
+      font-weight: 600;
+      width: 100%;
+    }
+  }
+
+  .user-menu li:hover .mega-contents {
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+  }
+
+  .boxs {
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  header {
+    .mobile-menu {
+      display: flex;
+    }
+
+    .header-wrapper {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      width: 100%;
+      overflow-x: auto;
+      position: fixed;
+      top: 0;
+      right: 100%;
+      background-color: var(--main-bg-color);
+      z-index: 99;
+      transition: right 0.3s ease-in-out;
+
+      &.active {
+        right: 0;
+      }
+    }
+
+    .logo {
+      font-size: 30px;
+      margin-left: 15px;
+    }
+
+    .mb-menu-close {
+      display: block;
+      position: absolute;
+      right: 43px;
+      top: 18px;
+      z-index: 99;
+      font-size: 25px;
+      cursor: pointer;
+    }
+
+    .mid-header {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      padding: 0 20px;
+      height: unset;
+    }
+
+    .mid-header > * {
+      margin-top: 15px;
+    }
+
+    .bottom-header {
+      justify-content: flex-start;
+    }
+
+    .main-menu {
+      flex-direction: column;
+      height: unset;
+    }
+
+    .main-menu a {
+      padding: 10px 0;
+    }
+
+    .mega-dropdown > a > i {
+      display: none;
+    }
+
+    .mega-contents {
+      opacity: 1;
+      visibility: visible;
+      position: absolute;
+      padding-left: 45px;
+      right: 0;
+      background-color: transparent;
+      width: 100%;
+      z-index: 2;
+    }
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  header {
+    .boxs {
+      padding: 0;
+    }
+
+    .mega-contents {
+      opacity: 1;
+      visibility: visible;
+      position: absolute;
+      padding-left: 45px;
+      right: 0;
+      background-color: transparent;
+      width: 100%;
+      top: calc(100% + 0px);
+      z-index: 2;
+      box-shadow: none;
+      transition: none;
+    }
+  }
+}

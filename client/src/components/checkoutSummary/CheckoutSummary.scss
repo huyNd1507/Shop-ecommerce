@@ -1,0 +1,58 @@
+.checkout-summery {
+  padding: 0 15px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  h3 {
+    font-size: 16px;
+    padding: 10px 0;
+    font-weight: 500;
+  }
+
+  .product-item {
+    display: flex;
+    margin-bottom: 10px;
+    border: 1px solid var(--border-color);
+    padding: 15px;
+
+    .product-img {
+      max-width: 35%;
+      margin-right: 20px;
+      img {
+        max-width: 100%;
+      }
+    }
+
+    .product-content {
+      h4 {
+        font-size: 18px;
+        margin-bottom: 15px;
+        font-weight: 600;
+      }
+      span {
+        font-size: 14px;
+
+        b {
+          font-weight: 500;
+          padding-left: 7px;
+        }
+      }
+    }
+  }
+
+  .info-total {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+
+    p {
+      font-size: 20px;
+      color: var(--red);
+      font-weight: bold;
+    }
+  }
+}

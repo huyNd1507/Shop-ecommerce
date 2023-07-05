@@ -1,0 +1,72 @@
+.custumer-info {
+  h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .form-group {
+    width: 100%;
+    margin-bottom: 25px;
+
+    label {
+      display: block;
+      font-size: 15px;
+      color: #808080;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px 15px;
+      border-radius: 5px;
+      border: 1px solid var(--border-color);
+      font-size: 15px;
+    }
+  }
+
+  .form-group-select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    font-size: 15px;
+    margin-bottom: 25px;
+  }
+
+  .--btn {
+    padding: 10px 10px;
+    margin: 10px 0;
+  }
+}
+
+.checkout-success {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+
+  img {
+    width: 50px;
+  }
+
+  p {
+    font-size: 15px;
+    padding: 5px 0;
+  }
+
+  .--btn {
+    padding: 10px 0;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .flex-reverse {
+    flex-direction: column-reverse;
+  }
+}

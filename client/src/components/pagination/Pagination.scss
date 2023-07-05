@@ -1,0 +1,24 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 10px 0;
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    margin-left: 5px;
+    font-size: 20px;
+
+    &.active {
+      background-color: var(--black);
+      color: #f6f6f6;
+    }
+    &.hide {
+      display: none;
+    }
+  }
+}

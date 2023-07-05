@@ -1,0 +1,53 @@
+.filter-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+
+  p {
+    font-size: 15px;
+    b {
+      padding-right: 5px;
+    }
+  }
+
+  .search-filter form input {
+    padding: 10px 5px;
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    margin-bottom: 10px;
+    font-size: 15px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .filter-sort {
+    float: right;
+
+    select {
+      padding: 8px 0;
+      outline: none;
+      border-radius: 5px;
+      font-size: 15px;
+      border: none;
+      cursor: pointer;
+    }
+
+    label {
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+}
+
+@media only screen and (max-width: 750px) {
+  p {
+    padding: 10px 0;
+  }
+}

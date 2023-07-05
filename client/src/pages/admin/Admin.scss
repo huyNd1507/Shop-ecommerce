@@ -1,0 +1,40 @@
+.admin {
+  display: flex;
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 20px;
+  position: relative;
+
+  .navbar {
+    width: 15%;
+
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      180deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(9, 94, 121, 0.9579540434337798) 35%,
+      rgba(0, 212, 255, 1) 100%
+    );
+  }
+
+  .content {
+    width: 85%;
+    padding: 5rem;
+    // background-color: #eee;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .admin {
+    padding: 0;
+    flex-direction: column;
+    .navbar {
+      width: 100%;
+    }
+
+    .content {
+      width: 100%;
+      padding: 3rem 1rem;
+    }
+  }
+}

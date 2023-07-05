@@ -1,0 +1,73 @@
+.checkout {
+  padding: 50px 0;
+  width: 100%;
+
+  form {
+    width: 100%;
+    display: flex;
+
+    .checkout-pay {
+      width: 60%;
+      padding: 15px;
+
+      h2 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 15px;
+      }
+
+      .payment-message {
+        color: rgb(105, 115, 134);
+        color: red;
+        font-size: 16px;
+        line-height: 20px;
+        padding-top: 12px;
+        text-align: center;
+      }
+
+      .payment-element {
+        margin-bottom: 24px;
+      }
+
+      .--btn {
+        width: 100%;
+        padding: 10px 0;
+      }
+
+      img {
+        width: 20px;
+      }
+
+      label {
+        display: block;
+        font-size: 1.4rem;
+        font-weight: 500;
+      }
+
+      input[type="text"],
+      .select,
+      .card-details {
+        display: block;
+        font-size: 1.6rem;
+        font-weight: 300;
+        padding: 1rem;
+        margin: 1rem auto;
+        width: 100%;
+        border: 1px solid #777;
+        border-radius: 3px;
+        outline: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .checkout {
+    form {
+      flex-direction: column;
+      div {
+        width: 100%;
+      }
+    }
+  }
+}

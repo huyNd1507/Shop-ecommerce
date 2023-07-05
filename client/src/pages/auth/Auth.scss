@@ -1,0 +1,123 @@
+.auth {
+  min-height: 70vh;
+  display: flex;
+  margin: 50px 0;
+  justify-content: center;
+  align-items: center;
+
+  &-container {
+    display: flex;
+    margin: 30px auto;
+    min-height: 300px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+
+  &-img {
+    animation: slide-down 0.5s ease;
+    width: 50%;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .form {
+    width: 50%;
+    padding: 3rem;
+    animation: slide-up 0.5s ease;
+    text-transform: uppercase;
+    align-items: center;
+
+    h2 {
+      color: var(--color-danger);
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+    form {
+      max-width: 100%;
+      input[type="text"],
+      input[type="email"],
+      input[type="password"] {
+        display: block;
+        font-size: 1.6rem;
+        font-weight: 300;
+        padding: 1rem;
+        margin: 1.5rem auto;
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        outline: none;
+      }
+
+      .links {
+        display: flex;
+        justify-content: space-between;
+        margin: 5px 0;
+      }
+
+      p {
+        text-align: center;
+        margin: 1rem;
+      }
+    }
+
+    .--btn {
+      padding: 1rem;
+      font-size: 15px;
+    }
+
+    .button-icon {
+      display: block;
+      margin-right: 10px;
+      color: #fff;
+    }
+
+    p {
+      margin-right: 5px;
+    }
+
+    .register {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1rem;
+    }
+  }
+
+  @keyframes slide-up {
+    0% {
+      transform: translateY(-5rem);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes slide-down {
+    0% {
+      transform: translateY(5rem);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .auth {
+    width: 100%;
+    min-height: 50vh;
+
+    &-container {
+      width: 100%;
+      margin: 0 20px;
+      .form {
+        width: 100%;
+      }
+      .auth-img {
+        display: none;
+      }
+    }
+  }
+}

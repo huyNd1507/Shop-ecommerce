@@ -1,0 +1,53 @@
+.review {
+  margin: 40px 0;
+  width: 35%;
+  h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  p {
+    font-size: 14px;
+  }
+
+  img {
+    width: 50px;
+  }
+  .card {
+    width: 100%;
+    max-width: 500px;
+    padding: 1rem;
+  }
+
+  .form-review {
+    form {
+      label {
+        display: block;
+        font-size: 1.4rem;
+        font-weight: 500;
+      }
+      input[type="text"],
+      input[type="number"],
+      input[type="file"],
+      input[type="email"],
+      select,
+      textarea,
+      input[type="password"] {
+        display: block;
+        font-size: 1.6rem;
+        font-weight: 300;
+        padding: 1rem;
+        margin: 1rem auto;
+        width: 100%;
+        border: 1px solid #777;
+        border-radius: 3px;
+        outline: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .review {
+    width: 100%;
+  }
+}
